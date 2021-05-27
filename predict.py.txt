@@ -1,0 +1,8 @@
+import joblib
+model=joblib.load('salary_model.pk1')
+
+#predict
+exp=input("Enter Years of Experience")
+pred=model.predict([[exp]])
+
+print("Expected Salary is",pred)
